@@ -2794,4 +2794,3 @@ peer's side if all the requirements are installed.
 [Sphinx Autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html)
 
 **Please leave your feedback [here](https://forms.gle/YEzd846qsykVaShq8)**
-","__typename":"TaskContent"},"__typename":"Task"},"__typename":"StudentTask"}],"__typename":"StudentQueries"}}}

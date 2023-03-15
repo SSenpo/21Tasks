@@ -36,7 +36,7 @@
 # Chapter I 
 ### Preamble
 
-![java-man](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931934/efc523ef-ff7a-3721-89c8-33b8349e6bca.png)<br>
+![java-man](images/img0.png)<br>
 Java Man, or *Homo erectus erectus*
 
 # Chapter II
@@ -303,7 +303,7 @@ Each application operation stage is divided by \".\" (period). Absolute correctn
 
 Example of program operation:
 
-![program](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931934/8a8ddad3-9ce3-31cc-b0d3-c88a58e05949.png)
+![program](images/img1.png)
 
 
 
@@ -335,11 +335,11 @@ Even NASA was engaged in the problem investigation.
 
 Below is the number of defects found in the controller software:
 
-![table_a.8-8](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931951/0f4a6ee0-4f62-3b92-a3eb-b7cdbb2e17f1.8-8)
+![table_a.8-8](images/img2.8-8)
 
 And this content is not safe to view:
 
-![table_a.8-9](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931951/e3f42d55-4bc1-343f-b2e6-356c8f8b97e4.8-9)
+![table_a.8-9](images/img3.8-9)
 
 # Chapter II
 ### General Rules
@@ -394,7 +394,7 @@ The program shall generate a random map with obstacles. Both player and its enem
 
 Example of a generated map:
 
-![map](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931951/486acac5-3b5e-367c-b4d7-805044bf614d.png)
+![map](images/img4.png)
 
 **Designations**: <br>
 `o` - position of a player (program user) on the map.<br>
@@ -522,7 +522,7 @@ Now your task is to implement functionality that prints a two-colored image in t
 
 An example of a black-and-white BMP image (this format is mandatory for the solution). Image size is 16*16 pixels.
 
-![it](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931948/5caaaba8-8dfb-32ac-9677-a1d041221c21.png)
+![it](images/img5.png)
 
 You can download this image [here](https://yadi.sk/i/nt-C_kZKWrlyNQ ).
 
@@ -531,7 +531,7 @@ Your application shall accept input parameters corresponding to characters that 
 If \".\" character is used for white color and \"0\" for black, the image in the console may look as follows:
 
 
-![it_console](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931948/2c9fc49d-8ae7-39b3-af74-179d65e083dd.png)
+![it_console](images/img6.png)
 
 Application logic must be distributed between different packages and have the following structure:
 
@@ -611,7 +611,7 @@ Example of program operation:
 
 `$ java -jar images-to-chars-printer.jar --white=RED --black=GREEN`
 
-![it_red](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931948/646b0e2e-fb94-3073-bdd4-cb20c700bdf1.png)
+![it_red](images/img7.png)
 
 
 
@@ -948,7 +948,7 @@ B = (3, 0, 1, 1, 0, 1)
 
 Thus, each of these vectors characterizes the text in terms of frequency of occurrence of words from our dictionary. Let's determine the similarity between vectors using the following formula:
 
-![formula](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931943/344089c1-c3f7-3294-8320-a624b151cb8e.png)
+![formula](images/img8.png)
 
 Thus, similarity value for these vectors is:
 ```
@@ -1077,7 +1077,7 @@ Each class must comply with SOLID principles:
 
 Today, you should focus on the first SOLID principle.
 
-![javanepunchman](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931936/9277def9-6ac4-3e09-821e-f0cc48698e64.png)
+![javanepunchman](images/img9.png)
 
 # Chapter II
 ### General Rules
@@ -1424,7 +1424,7 @@ Reflection tool enables to flexibly use class information during runtime, as wel
 One of reflection capabilities is modifying private field values from outside. We may ask then whether this contradicts the encapsulation principle, and <br>
 the answer is no :)
 
-![Time for reflection](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931966/785a3248-54d9-3539-8022-7c3b7982552d.png)
+![Time for reflection](images/img10.png)
 
 # Chapter II
 ### General Rules
@@ -1706,7 +1706,7 @@ Below are several best practices for module and integration testing:
 - All tests must be launchable by running mvn clean compile test command
 - Source code of the tested class must be fully covered in all implemented tests. Below is an example of a full coverage demonstration with IntelliJ IDEA for Exercise 00:
 
-![test](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/931964/8e7a3ff4-3427-3118-9267-e61452f97378.png)
+![test](images/img11.png)
 
 # Chapter IV
 ### Exercise 00 – First Tests
@@ -1992,7 +1992,7 @@ Minimum requirements for Java junior developers:
 14. English
       ...
 
-![Types of Headache](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/932034/4450e5a8-6213-3328-92eb-9cbe36180bc4.png)
+![Types of Headache](images/img12.png)
 
 # Chapter II
 ### General Rules
@@ -2039,7 +2039,7 @@ JavaFX allows to create high-quality Desktop applications. Despite the fact that
 
 Your objective is to implement the client/server game where the Socket server will allow two Java FX clients to play a tank game with each other. An example of the client-side appearance is provided below:
 
-![tanks](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/932034/5fd986b1-79ed-3f1d-9d1a-86b0de1e54d5.png)
+![tanks](images/img13.png)
 
 Thus, the game should enable two users to \"drive\" their tank and decrease the enemy's HP by shooting.
 
@@ -2105,7 +2105,7 @@ There are several ways to configure beans:
 
 XML configuration allows to change application's behavior without a reassembly. In turn, Java configuration makes code more developer-friendly.
 
-![Sakura](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/932032/2d688d9d-e423-3f4f-9fec-e7a95b51c0be.png)
+![Sakura](images/img14.png)
 
 # Chapter II
 ### General Rules
@@ -2147,7 +2147,7 @@ Renderer also has a dependency on PreProcessor interface that pre-processes mess
 
 UML diagram of classes is shown below:
 
-![Diagram of classes](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/932032/2d4a8d52-e0fb-34e7-8dc7-441b18befbec.png)
+![Diagram of classes](images/img15.png)
 
 An example of code using these classes in a standard way:
 ```java
@@ -2342,7 +2342,7 @@ Layer |	Example
 2.<font> Channel |	Ethernet, DSL
 1.<font> Physical |	USB, \"twisted pair\"
 
-![A Joke](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/932033/9f958469-3990-327c-b053-11fa391d16de.png)
+![A Joke](images/img16.png)
 
 # Chapter II
 ### General Rules
@@ -2529,4 +2529,3 @@ For example, a command for sending a message may look as follows (specific conte
   \"roomId\": 10
 }
 ```
-","__typename":"TaskContent"},"__typename":"Task"},"__typename":"StudentTask"}],"__typename":"StudentQueries"}}}

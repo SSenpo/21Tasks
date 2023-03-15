@@ -53,7 +53,7 @@ Resume: Today you will see how to get needed data based on different structures 
 ## Chapter I
 ## Preamble
 
-![D02_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574089/ef93217f-0e43-35c4-bf3f-ef79a3302cb9.png)
+![D02_01](images/img0.png)
 
 In the picture, you can see a Relational Expression in Tree View. This expression corresponds the next SQL query 
 
@@ -109,7 +109,7 @@ It’s just a set of loops ... Not magic at all
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574089/f4ed8ccf-2830-3bc8-a9f7-032f3915787e.png)
+![schema](images/img1.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -421,7 +421,7 @@ Resume: Today you will see how to change data based on DML language
 ## Chapter I
 ## Preamble
 
-![D03_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574090/837fea4c-64f4-3a09-bbaf-8c35fb5813e4.png)
+![D03_01](images/img2.png)
 
 Relation Theory is a mathematical foundation for modern Relational Databases. Every databases’ aspect has corresponding mathematical and logical justification. Including INSERT / UPDATE / DELETE operators. (Dr. Edgar Frank Codd is on the picture).
 
@@ -448,7 +448,7 @@ What’s about the DELETE statement?
 
 The last case with UPDATE statement is really interesting, because in other words you add a new tuple and after that make a MINUS of the old row. The same behavior in physical implementation! Actually, `UPDATE = DELETE + INSERT` and there is a special term “Tombstone” status for a particular deleted/updated row.  Then if you have a lot of Tombstones then you have a bad TPS metric and you need to control your dead data!
 
-![D03_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574090/1624be7b-6590-3ce2-9fb8-706d028eee55.png)
+![D03_02](images/img3.png)
 
 Let’s make a cheese of our data! :-)
 
@@ -476,7 +476,7 @@ Let’s make a cheese of our data! :-)
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574090/f63dec9e-4976-320a-90cc-3e70b8218920.png)
+![schema](images/img4.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -810,7 +810,7 @@ Resume: Today you will see how to use a virtual view and physical snapshot of da
 ## Chapter I
 ## Preamble
 
-![D04_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574092/1f6b0a27-b298-3599-bb2d-86b3533013af.png)
+![D04_02](images/img5.png)
 
 Why do we need virtual tables and materialized views in databases? Databases are just tables, aren't they? 
 No, actually not. Databases are similar for object-oriented language. Just recall, you have a lot of abstraction in Java (I mean Java Interfaces). We need abstraction to achieve “Clean Architecture” and change objects with minimal effect on dependencies (sometimes it’s working :-). 
@@ -826,8 +826,8 @@ So, what is the difference then between 2 objects? The main difference is in the
 
 |  |  |
 | ------ | ------ |
-| View is a continuous object with the same data like in the underlying table(s), that are used to create this view. Other words, if we select data from view, view reroutes our query to underlying objects and then returns results for us. | ![D04_03](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574092/3d28f4f4-7c45-382c-9ad8-b079abd2617e.png) |
-| ![D04_04](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574092/de4a1101-c7ff-32c2-ad58-0cb4c1df672a.png) | Materialized View is a discrete object. Other words, we need to wait when the Materialized View will be refreshed based on an “event trigger” (for example, time schedule). This object always is behind actual data in underlying tables. |
+| View is a continuous object with the same data like in the underlying table(s), that are used to create this view. Other words, if we select data from view, view reroutes our query to underlying objects and then returns results for us. | ![D04_03](images/img0.png) |
+| ![D04_04](images/img1.png) | Materialized View is a discrete object. Other words, we need to wait when the Materialized View will be refreshed based on an “event trigger” (for example, time schedule). This object always is behind actual data in underlying tables. |
 
 Also, there are “a few” additional differences between View and Materialized View.
 - Virtual Table can work with `INSERT/UPDATE/DELETE` traffic but with some restrictions. 
@@ -859,7 +859,7 @@ Also, there are “a few” additional differences between View and Materialized
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574092/6c4be3a6-4bb6-3544-b2ff-5057c1ce0470.png)
+![schema](images/img2.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -1090,7 +1090,7 @@ Resume: Today you will see how and when to create database indexes
 ## Chapter I
 ## Preamble
 
-![D05_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574093/cd18f18e-310d-3efc-926e-a5881d3c8bc2.png)
+![D05_01](images/img3.png)
 
 How does indexing make us faster? Why does the same SQL query with and without index have differences in TPS (Transaction Per Second? Actually, from “user-point-of-view”, index is just a “black box” with magic inside. From “mathematical-point-of-view”, index is just an organized structure and no magic actually. 
 
@@ -1098,8 +1098,8 @@ Let me explain the reason why the index exists but is not used.
 
 |  |  |
 | ------ | ------ |
-| Please take a look at the picture, the red line means linear time to find data based on a query. Other words, if you need to find something then you have to see in each block , page , tuple and create a list of your searching rows. (this term has a name “sequential scanning”). Actually, if you created a BTree index, then you got an improvement for speed. So, the green line corresponds to logarithmic searching time. Let’s imagine,  if you have 1000000 rows, and to make a search for 1 row , you need, saying ... 1 second then in total you need 1000000 seconds, but with index you need ln(1000000) ~ 14 seconds | ![D05_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574093/8414b894-70c4-3d54-acb3-1c51dec26b51.png) |
-| ![D05_03](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574093/32138cd3-c229-33ba-8bd4-212842dc5eff.png) | But why… index is not working? There are different reasons to be honest, but the main one is based on the total number of rows of the indexed table. Please take a look at a picture, I drawed a bold blue line and this is a path for searching algorithms. As you can see, linear time at the beginning is most appropriate for algorithms instead of using logarithmic search. How does one detect this intersection point? Basically I can recommend experiments, benchmarks and … your intuition. No formulas at all. Therefore sometimes, if you want to compare  results of your searching, you need to disable sequential scanning explicitly. For example, there is a special command  set enable_seqscan =off in PostgreSQL |
+| Please take a look at the picture, the red line means linear time to find data based on a query. Other words, if you need to find something then you have to see in each block , page , tuple and create a list of your searching rows. (this term has a name “sequential scanning”). Actually, if you created a BTree index, then you got an improvement for speed. So, the green line corresponds to logarithmic searching time. Let’s imagine,  if you have 1000000 rows, and to make a search for 1 row , you need, saying ... 1 second then in total you need 1000000 seconds, but with index you need ln(1000000) ~ 14 seconds | ![D05_02](images/img4.png) |
+| ![D05_03](images/img5.png) | But why… index is not working? There are different reasons to be honest, but the main one is based on the total number of rows of the indexed table. Please take a look at a picture, I drawed a bold blue line and this is a path for searching algorithms. As you can see, linear time at the beginning is most appropriate for algorithms instead of using logarithmic search. How does one detect this intersection point? Basically I can recommend experiments, benchmarks and … your intuition. No formulas at all. Therefore sometimes, if you want to compare  results of your searching, you need to disable sequential scanning explicitly. For example, there is a special command  set enable_seqscan =off in PostgreSQL |
 
 
 
@@ -1127,7 +1127,7 @@ Let me explain the reason why the index exists but is not used.
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574093/169a0de7-7893-3d00-a588-aa2a59ec8778.png)
+![schema](images/img6.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -1369,17 +1369,17 @@ Resume: Today you will see how to add a new business feature into our data model
 ## Chapter I
 ## Preamble
 
-![D06_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574095/bb4e497c-1fee-3cb5-8a45-8d8054bbe84a.png)
+![D06_01](images/img7.png)
 
 Why is a diamond one of the most durable objects? The reason is in the structure. Every atom knows about his place in diamond’s topology and makes the whole diamond unbreakable. 
 
 Logical structure is like a diamond. If you find an appropriate structure for your own Database Model then you find gold (or diamond :-). There are two aspects of Database Modeling. The first one is a logical view, in other words how your model will smoothly describe the real business world. 
 
-![D06_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574095/a35d9657-cfb6-3674-af13-95cdc2fe916d.png)
+![D06_02](images/img8.png)
 
 On the other hand, your model should solve your functional tasks with minimal impaction. It means, logical model view transforms to physical model view and not just from table and attributes descriptions. But actually, from performance and budget perspectives that are more mainly nowadays. How to find a balance? For this case there are 3 steps to create a very good design. Just take a look at the picture below. 
 
-![D06_03](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574095/bd9e8d3a-0a68-32fa-af9f-67372144aae3.png)
+![D06_03](images/img9.png)
 
 
 ## Chapter II
@@ -1405,7 +1405,7 @@ On the other hand, your model should solve your functional tasks with minimal im
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574095/d470a052-6da5-3387-ad0a-52734e254df6.png)
+![schema](images/img10.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -1626,19 +1626,19 @@ Resume: Today you will see how relational model works and how to get needed data
 ## Chapter I
 ## Preamble
 
-![D01_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/b79b3c29-8234-31a2-8855-f1470a802fab.png)
+![D01_01](images/img11.png)
 
 Standards are everywhere, and Relational Databases are under control as well :-). To be honest between us, more restricted SQL standards were at the beginning of 2000 years. Actually when the “Big Data” pattern was born, Relational Databases had their own way to realize this pattern and therefore standards right now are more ... lightweight. 
 
-![D01_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/480ee6b5-8bae-3ca5-baf9-7b2a65aea548.png)
+![D01_02](images/img12.png)
 
 Please take a look at some SQL standards below and try to think about the future of Relational Databases.
 
 |  |  |
 | ------ | ------ |
-| ![D01_03](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/d09cda9c-74f2-39e6-bb1b-4400643e70ce.png) | ![D01_04](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/cd27705a-67ea-35b8-abcc-f300bca0d683.png) |
-| ![D01_05](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/415c3554-9a42-3bc8-8819-cfb405b8f5e0.png) | ![D01_06](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/fdd2b034-3fc7-3aa1-b36f-5dd4e18f3a87.png) |
-| ![D01_07](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/24dcc681-dd6b-3dd8-8cb9-59e1bbc0b729.png) | ![D01_08](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/d7736f8f-c8b0-3b3b-afed-e272e6cc0de7.png) |
+| ![D01_03](images/img13.png) | ![D01_04](images/img0.png) |
+| ![D01_05](images/img14.png) | ![D01_06](images/img1.png) |
+| ![D01_07](images/img15.png) | ![D01_08](images/img2.png) |
 
 ## Chapter II
 ## General Rules
@@ -1663,7 +1663,7 @@ Please take a look at some SQL standards below and try to think about the future
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574086/39a38e13-1a47-319b-bd42-ee19751d0ce8.png)
+![schema](images/img3.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -1920,7 +1920,7 @@ Resume: Today you will see how to get needed data based on sets constructions an
 ## Chapter I
 ## Preamble
 
-![D01_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574087/c5ad3fc5-483b-37e3-a8a3-3fb747406563.png)
+![D01_01](images/img4.png)
 
 In many aspects, sets are used in Relational Databases. Not just, make UNION or find MINUS between sets. Sets are also good candidates to make recursive queries.
 
@@ -1934,7 +1934,7 @@ The main rules to work with sets are below
 - The main SQL provides a final names of attributes for whole query
 - The attributes of controlled SQL should satisfied number of columns and corresponding family types of main SQL
 
-![D01_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574087/8d5417b4-f269-3f1f-bb78-c6018125e5d7.png)
+![D01_02](images/img5.png)
 
 Moreover, SQL sets are useful  to calculate some specific Data Science metrics, for example Jaccard distance between 2 objects based on existing data features.
 
@@ -1962,7 +1962,7 @@ Moreover, SQL sets are useful  to calculate some specific Data Science metrics, 
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574087/61232196-2ad3-3b56-aeaa-bf0b9b284dda.png)
+![schema](images/img6.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -2245,7 +2245,7 @@ Resume: Today you will see how database works with transactions and isolation le
 ## Chapter I
 ## Preamble
 
-![D08_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/c2f0a846-2b20-3523-b47c-3f9d81bda8b0.png)
+![D08_01](images/img7.png)
 
 The Penrose stairs or Penrose steps, also dubbed the impossible staircase, is an impossible object created by Lionel Penrose and his son Roger Penrose. A variation on the Penrose triangle, it is a two-dimensional depiction of a staircase in which the stairs make four 90-degree turns as they ascend or descend yet form a continuous loop, so that a person could climb them forever and never get any higher. This is clearly impossible in three dimensions. The \"continuous staircase\" was first presented in an article that the Penroses wrote in 1959, based on the so-called \"triangle of Penrose\" published by Roger Penrose in the British Journal of Psychology in 1958. 
 
@@ -2257,15 +2257,15 @@ The Penrose stairs or Penrose steps, also dubbed the impossible staircase, is an
 
 Therefore there are different Isolation Levels in ANSI SQL standard that prevent famous anomalies.
 
-![D08_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/94a4a900-a29f-39d7-892e-2c9b87dd5b82.png)
+![D08_02](images/img8.png)
 
 From one side this matrix should be a Standard for every Relational Database, but reality ... looks a bit different.
 
 |  |  | |
 | ------ | ------ | ------ |
-| PostgreSQL | ![D08_03](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/dcc51d89-f267-30a7-b1af-5ffbc01b76b9.png) |
-| Oracle | ![D08_04](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/d25e636b-4933-3112-bc37-8cf723662668.png) |
-| MySQL | ![D08_05](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/06b4c4c3-9c71-3150-a305-d46c815e24b0.png) |
+| PostgreSQL | ![D08_03](images/img9.png) |
+| Oracle | ![D08_04](images/img10.png) |
+| MySQL | ![D08_05](images/img11.png) |
 
 Nowadays, IT community found a set of new anomalies based on Database Model (logical view)
 - Read Skew Anomaly
@@ -2300,7 +2300,7 @@ Nowadays, IT community found a set of new anomalies based on Database Model (log
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/4f8d56ae-dfcf-3cb9-8eb9-b39555902155.png)
+![schema](images/img12.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -2406,7 +2406,7 @@ If not, then please set “read committed” isolation level explicitly on a ses
 
 |  |  |
 | ------ | ------ |
-| Let’s check one of the famous “Lost Update Anomaly” database pattern. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_06](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/a0dbe9c6-fb58-34ff-b8f0-06dc3742a8e1.png) |
+| Let’s check one of the famous “Lost Update Anomaly” database pattern. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_06](images/img13.png) |
 
 Please check a rating for “Pizza Hut” in a transaction mode for both Sessions and after that make `UPDATE` of rating to 4 value in session #1 and make `UPDATE` of rating to 3.6 value in session #2 (in the same order as in the picture). 
 
@@ -2428,7 +2428,7 @@ Actually, we need two active sessions (meaning 2 parallel sessions in the comman
 
 |  |  |
 | ------ | ------ |
-| Let’s check one of the famous “Lost Update Anomaly” database pattern but under `REPEATABLE READ` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_07](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/c3dd7233-1d46-39b5-a51f-db4106197e2d.png) |
+| Let’s check one of the famous “Lost Update Anomaly” database pattern but under `REPEATABLE READ` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_07](images/img0.png) |
 
 Please check a rating for “Pizza Hut” in a transaction mode for both Sessions and after that make `UPDATE` of rating to 4 value in session #1 and make `UPDATE` of rating to 3.6 value in session #2 (in the same order as in the picture). 
 
@@ -2448,7 +2448,7 @@ Actually, we need two active sessions (meaning 2 parallel sessions in the comman
 
 |  |  |
 | ------ | ------ |
-| Let’s check one of the famous “Non-Repeatable Reads” database pattern but under `READ COMMITTED` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_08](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/24f4f2ed-4b18-3a22-8acc-5c2181669ec8.png) |
+| Let’s check one of the famous “Non-Repeatable Reads” database pattern but under `READ COMMITTED` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_08](images/img14.png) |
 
 Please check a rating for “Pizza Hut” in a transaction mode for both Sessions and after that make `UPDATE` of rating to 3.6 value in session #2 (in the same order as in the picture). 
 
@@ -2470,7 +2470,7 @@ Actually, we need two active sessions (meaning 2 parallel sessions in the comman
 
 |  |  |
 | ------ | ------ |
-| Let’s check one of the famous “Non-Repeatable Reads” database pattern but under `SERIALIZABLE` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_09](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/838c6961-0a05-3e4a-a00c-fea58dc43ad6.png) |
+| Let’s check one of the famous “Non-Repeatable Reads” database pattern but under `SERIALIZABLE` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_09](images/img15.png) |
 
 Please check a rating for “Pizza Hut” in a transaction mode for both Sessions and after that make `UPDATE` of rating to 3.0 value in session #2 (in the same order as in the picture). 
 
@@ -2493,7 +2493,7 @@ Actually, we need two active sessions (meaning 2 parallel sessions in the comman
 
 |  |  |
 | ------ | ------ |
-| Let’s check one of the famous “Phantom Reads” database pattern but under `READ COMMITTED` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_10](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/112a7af6-a428-3c26-b8d2-e3687a31c093.png) |
+| Let’s check one of the famous “Phantom Reads” database pattern but under `READ COMMITTED` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_10](images/img16.png) |
 
 Please summarize all ratings for all pizzerias in a transaction mode for both Sessions and after that make `UPDATE` of rating to 1 value for “Pizza Hut” restaurant in session #2 (in the same order as in the picture). 
 
@@ -2516,7 +2516,7 @@ Actually, we need two active sessions (meaning 2 parallel sessions in the comman
 
 |  |  |
 | ------ | ------ |
-| Let’s check one of the famous “Phantom Reads” database pattern but under `REPEATABLE READ` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_11](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/8c3477d1-e575-32bc-a563-53693c8b3b66.png) |
+| Let’s check one of the famous “Phantom Reads” database pattern but under `REPEATABLE READ` isolation level. You can see a graphical presentation of that anomaly on a picture. Horizontal Red Line means the final results after all sequential steps for both Sessions. | ![D08_11](images/img0.png) |
 
 
 Please summarize all ratings for all pizzerias in a transaction mode for both Sessions and after that make `UPDATE` of rating to 5 value for “Pizza Hut” restaurant in session #2 (in the same order as in the picture). 
@@ -2541,7 +2541,7 @@ Let’s reproduce a deadlock situation in our database.
 
 |  |  |
 | ------ | ------ |
-| You can see a graphical presentation of the deadlock situation on a picture. Looks like a “christ-lock” between parallel sessions. | ![D08_12](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574106/e47077a5-e020-3ddb-acfd-861f86e8e76d.png) |
+| You can see a graphical presentation of the deadlock situation on a picture. Looks like a “christ-lock” between parallel sessions. | ![D08_12](images/img17.png) |
 
 Please write any SQL statement with any isolation level (you can use default setting) on the `pizzeria` table to reproduce this deadlock situation.
 
@@ -2597,7 +2597,7 @@ Resume: Today you will see how to create and use functional blocks in Databases
 ## Chapter I
 ## Preamble
 
-![D09_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574108/cf03ac34-1445-3840-b63c-a5b56d8399c6.png)
+![D09_01](images/img18.png)
 
 There are a lot of functional programming languages in the RDBMS world. We can say mainly about “one-to-one” dependency between a particular RDBMS engine and functional language inside. Please take a look at a sample of these languages.
 - T-SQL
@@ -2614,8 +2614,8 @@ Please take a look at the 2 simple architectures below.
 
 |  |  |
 | ------ | ------ |
-| ![D09_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574108/38917ffa-a5f4-31bb-ae03-0fcdb2d3d112.png) | Everything is clear, frontends and backends are working through a special REST API layer that implements whole business logic. That's a really ideal application world. |
-| But, there are always some privileged guys / applications (like IDE) that are working directly with our databases and … our pattern can be broken. | ![D09_03](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574108/ff195475-c061-3693-aafc-349695c23c94.png) |
+| ![D09_02](images/img19.png) | Everything is clear, frontends and backends are working through a special REST API layer that implements whole business logic. That's a really ideal application world. |
+| But, there are always some privileged guys / applications (like IDE) that are working directly with our databases and … our pattern can be broken. | ![D09_03](images/img20.png) |
 
 Just think about it and try to create a clean architecture :-)
 
@@ -2643,7 +2643,7 @@ Just think about it and try to create a clean architecture :-)
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574108/579878a0-ae11-3eb1-85f9-c6bdc689045b.png)
+![schema](images/img21.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -2906,13 +2906,13 @@ Resume: Today you will implementing a quick solution on SQL to achieve results o
 ## Chapter I
 ## Preamble
 
-![T00_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=gitlab/content_versions/574110/7f3c9bb9-af14-336a-9139-c0c23158f69b.png)
+![T00_01](images/img22.png)
 
 Given a finite number of \"cities\" along with the cost of travel between each pair of them, find the cheapest way of visiting all the cities and returning to your starting point. (on image Proctor and Gamble company ran a contest in 1962.  The contest required solving a TSP on a specified 33 cities.  There was a tie between many people who found the optimum.  An early TSP researcher, Professor Gerald Thompson of Carnegie Mellon University, was one of the winners.)
 
 The travel costs are symmetric in the sense that traveling from city X to city Y costs just as much as traveling from Y to X; the \"way of visiting all the cities\" is simply the order in which the cities are visited. To put it differently, the data consist of integer weights assigned to the edges of a finite complete graph; the objective is to find a hamiltonian cycle (that is, a cycle passing through all the vertices) of the minimum total weight.  In this context, hamiltonian cycles are commonly called tours.
 
-![T00_00](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=gitlab/content_versions/574110/9da3733d-86ed-3a93-bb5f-9014792ded92.png)
+![T00_00](images/img23.png)
 
 The origins of the TSP are obscure. In the 1920's, the mathematician and economist Karl Menger publicized it among his colleagues in Vienna. In the 1930's, the problem reappeared in the mathematical circles of Princeton. In the 1940's, it was  studied by statisticians (Mahalanobis (1940), Jessen (1942), Gosh (1948), Marks (1948)) in connection with an agricultural  application and the mathematician Merill Flood popularized it among his colleagues at the RAND Corporation.  Eventually,  the TSP gained notoriety as the prototype of a hard problem in combinatorial optimization: examining the tours one by one  is out of the question because of their large number, and no other idea was on the horizon for a long time.
 
@@ -2951,7 +2951,7 @@ The origins of the TSP are obscure. In the 1920's, the mathematician and economi
 | Language                        | ANSI SQL|
 | SQL Syntax Pattern                        | Recursive Query|
 
-![T00_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=gitlab/content_versions/574110/9306a392-a001-3208-89a4-04ed169e06be.png)
+![T00_02](images/img24.png)
 
 Please take a look at the Graph on the left. 
 There are 4 cities (a, b, c and d) and arcs between them with cost (or taxination). Actually the cost (a,b) = (b,a).
@@ -3039,7 +3039,7 @@ Resume: Today you will see how to use specific OLAP constructions to get a “Va
 ## Chapter I
 ## Preamble
 
-![D07_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574096/8d2e9c07-b2be-3063-83b8-0fd926d89c8d.png)
+![D07_01](images/img1.png)
 
 Please take a look at Curve of Usefulness for detailed data in time. Other words, detailed data (means user transactions, facts about products and providers, etc.) are not useful for us from a historical perspective, because we just need to know  some aggregation to describe what was going on a year ago.
 
@@ -3049,7 +3049,7 @@ From a database point of view, “Analytical mind” corresponds to OLAP  traffi
 
 If we are talking about historical data then we should mention the “Data lifecycle management” pattern. Simple words, what should we do with old data? TTL (time-to-live), SLA for data, Retention Data Policy, etc. are terms that are in use in Data Governance strategy.
 
-![D07_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574096/75b6bf5d-6236-30c2-8ec0-85cd776633bf.png)
+![D07_02](images/img2.png)
 
 
 
@@ -3076,7 +3076,7 @@ If we are talking about historical data then we should mention the “Data lifec
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574096/7923286c-0295-3722-9ab4-347989bdb6f8.png)
+![schema](images/img3.png)
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
@@ -3339,7 +3339,7 @@ Resume: Today you will know what DWH is and how to create a first ETL process
 ## Chapter I
 ## Preamble
 
-![T01_01](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574112/542ba91b-7ef8-316e-b463-11326b4dbc46.png)
+![T01_01](images/img4.png)
 
 A Data Warehousing (DWH) is a process for collecting and managing data from varied sources to provide meaningful business insights. A Data warehouse is typically used to connect and analyze business data from heterogeneous sources. The data warehouse is the core of the BI system which is built for data analysis and reporting.
 
@@ -3347,12 +3347,12 @@ There are 2 DWH- “fathers” with opposite opinions on how to make a better DW
 
 |  |  |
 | ------ | ------ |
-| “A DWH is a subject-oriented, integrated, nonvolatile, and time-variant collection of data in support of management’s decisions” (Bill Inmon) | ![T01_02](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574112/29189ddc-9e94-350f-b701-4cd3e219fa0d.png) |
-| ![T01_03](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574112/03cb2805-c5b7-39d7-b246-4aca7cd93927.png) | “A DWH is a system that extracts, cleans, conforms, and delivers source data into a dimensional data store and then supports and implements querying and analysis for the purpose of decision making” (Ralph Kimball) |
+| “A DWH is a subject-oriented, integrated, nonvolatile, and time-variant collection of data in support of management’s decisions” (Bill Inmon) | ![T01_02](images/img5.png) |
+| ![T01_03](images/img6.png) | “A DWH is a system that extracts, cleans, conforms, and delivers source data into a dimensional data store and then supports and implements querying and analysis for the purpose of decision making” (Ralph Kimball) |
 
 Nowadays, Big Data is coming more and more and we need more resources to control, structure and further research our data. To support classical DataWareHouse systems there is a new pattern called LakeHouse (based on λ-architecture) = DataLake + DataWareHouse. From a logical point of view, we can imagine a modern LakeHouse like a set of logical data layers.
 
-![T01_04](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574112/ddc73126-973a-3fb0-82cc-9b9fec388194.png)
+![T01_04](images/img7.png)
 
 Therefore, to be a Data Architect you need to know a “bit more” than Relational Modeling. 
 I would like to show a list of existing Data Models Patterns. 
@@ -3391,7 +3391,7 @@ I would like to show a list of existing Data Models Patterns.
 - Please download a [script](materials/rush01_model.sql) with Database Model here and apply the script to your database (you can use command line with psql or just run it through any IDE, for example DataGrip from JetBrains or pgAdmin from PostgreSQL community). 
 - Please take a look at the Logical View of our Database Model. 
 
-![schema](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574112/4d3ca11d-5c9c-3e0d-8967-2298624f56d3.png)
+![schema](images/img8.png)
 
 
 ## Chapter IV
@@ -3406,7 +3406,7 @@ I would like to show a list of existing Data Models Patterns.
 
 Let’s take a look at the data sources and first logical data layer (ODS - Operational Data Store) in the DWH.
 
-![T01_05](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574112/44a16f33-e9bc-376f-9f68-02525a688893.png)
+![T01_05](images/img25.png)
 
 `User` table Definition (in a Green Source Database):
 
@@ -3554,7 +3554,7 @@ Below presented a table of result columns and corresponding calculation formula.
 | currency_name | source: currency.name | 
 | currency_in_usd | involved sources: currency.rate_to_usd, currency.updated, balance.updated.Take a look at a graphical interpretation of the formula below.| 
 
-![T01_06](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/574112/75d3374e-e2a2-3aa3-bdc6-5aef2189fca7.png)
+![T01_06](images/img26.png)
 
 - need to find a nearest rate_to_usd of currency at the past (t1) 
 - if t1 is empty (means no any rates at the past) then find a nearest rate_to_usd of currency at the future (t2)
@@ -3568,5 +3568,3 @@ Please take a look at a sample of output data below. Sort the result by user nam
 | Иван | Иванов | EUR | 17 |
 | ... | ... | ... | ... |
 
-
-","__typename":"TaskContent"},"__typename":"Task"},"__typename":"StudentTask"},{"id":"574113_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"574113","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"574114_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"574114","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"574115_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"574115","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"574116_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"574116","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"574117_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"574117","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"574118_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"574118","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"574119_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"574119","content":null,"__typename":"Task"},"__typename":"StudentTask"}],"__typename":"StudentQueries"}}}

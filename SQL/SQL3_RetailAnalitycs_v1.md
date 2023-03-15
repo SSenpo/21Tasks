@@ -23,7 +23,7 @@ Retail analytics data upload, its simple analysis, statistics, customer segmenta
 
 ## Chapter I
 
-![SQL3_RetailAnalytics_v1.0](https://edu.21-school.ru/services/storage/download/public_any/182e845c-6712-4356-814d-7295dc8afe30?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356303/a48ef565-0ca6-3d96-b763-420bd6c26918.PNG)
+![SQL3_RetailAnalytics_v1.0](images/img27.png)
 
 Chuck was holding the already slightly crumpled financial statements for the past period and trying to understand the numbers written there. He had been putting off processing, analyzing, and reconciling them for too long. And the paperwork seemed to be growing more and more every day, until finally the number of papers exceeded the critical value, when one can no longer deal with it alone. Chuck was sitting alone at the office, helplessly playing with the sheets in his hands, flipping through the pages as if hoping that this would help reduce their number, trying to figure out what kind of airplanes they could be made into. He wondered if he could make a paper boeing out of that much. He even googled instructions on how to do it.
 
