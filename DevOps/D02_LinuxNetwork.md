@@ -35,7 +35,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I
 
-![linux_network](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356275/ccaa8172-7483-3ca0-a630-ec63d5871773.png)
+![linux_network](images/img3.png)
 
 Planet Earth, USA, California, Compton, Seb's Jazz Club, nowadays.
 

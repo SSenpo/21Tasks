@@ -27,7 +27,7 @@ Implementation of the Crypto project.
 
 ## Chapter I
 
-![Crypto](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/5de171d2-6ff0-3ba8-a4ba-a6dd39f03123.JPG)
+![Crypto](images/img10.JPG)
 
 The letter came on the corporate email exactly when Eve was reading the DES algorithm. The Data Encryption Standard wasn't some super innovation, but it included bases that have been used in encryption everywhere to this day. And the algorithm itself has not become much easier to understand because of its age. So, that’s why Eve was sitting with a pen, a piece of paper and a bunch of tables, trying her best to get to the bottom of it.
 
@@ -75,11 +75,11 @@ Behind the scientific word “cryptography” lies the ancient human desire to h
 
 One of the first proofs of using ciphers is the \"Scytale Algorithm\". *Scytale* is a tool used to implement a transposition cipher, also known in cryptography as the Ancient Spartan cipher. A strip of parchment and a cylindrical stick with a fixed length and diameter were used to encrypt the message. The strip of parchment was wound around the stick so that there were no gaps or overlaps. The message was written on the wound parchment strip on the long side of the cylinder. After reaching the end of the wound strip, the stick was rotated a fraction of a turn, and the writing continued. After unwinding the parchment strip, the encrypted message appeared on it. Decryption was performed using a stick of the same size.
 
-![scytale](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/7451d596-35e8-3563-9f73-2bf2b9f2ba88.png)
+![scytale](images/img11.png)
 
 In the fourth century B.C., Aeneas Tacticus, author of military treatises, invented the cipher disk later named after him. To write the message, a thread was passed sequentially through the holes of the disk with the letters signed next to them. To read the text, all you had to do was to pull out the thread in the reverse order. This was the main disadvantage of this device - if there was time, the cipher could have been solved by any literate person. At the same time, to quickly \"erase\" the information from the Aeneas disk, one had only to pull out the thread or break the device.
 
-![eney-disk](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/2792d295-24ea-35c6-9416-f4a74bb6fdbf.png)
+![eney-disk](images/img12.png)
 
 One of the first documented ciphers is the Caesar cipher (around 100 BC). Its use was very simple: each letter of the plaintext was replaced by a letter some fixed number of positions down the alphabet. Knowing this number, it was possible to break the cipher and find out what secrets Caesar passed on to his generals.
 
@@ -87,23 +87,23 @@ The high level of mathematics and linguistics development made it possible not o
 
 During the Renaissance, cryptography was thriving. The period of formal cryptography begins, associated with the emergence of formalized, more secure ciphers. Around 1466, the Italian scientist Leon Alberti invented a cipher disk consisting of two parts: an outer and an inner one. The stationary outer disk had the alphabet and numbers written on it. The inner movable disk also contained letters and numbers in a different order and was the key to the cipher. To encrypt the text, it was necessary to find the right letter on the outer disk and replace it with the letter on the inner disk below it. After that, the inner disk was shifted, and the new letter was encrypted from the new position. Thus, the Alberti cipher became one of the first polyalphabetic ciphers based on the principle of combinatorics. Besides that, Leon Alberti wrote one of the first scientific works on cryptography, the «Treatise on Ciphers».
 
-![alberty-disk](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/22651875-3404-39c7-a02e-41e00dc6afd1.png)
+![alberty-disk](images/img13.png)
 
 ### Era of encryption machines
 
 The Industrial Revolution did not pass over cryptography. Around 1790, one of the founding fathers of the United States, Thomas Jefferson, created the disk cipher, later named Jefferson disk. This device, based on the rotary system, allowed the automation of the encryption process and became the first crypto-device of the New Age.
 
-![shifr-dzheffersona](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/5d0633e6-0225-3ec6-9a74-d7f9adf7146f.png)
+![shifr-dzheffersona](images/img14.png)
 
 The invention of the telegraph had a great impact on ciphers. Previous ciphers stopped being effective in a moment, and the need for high-quality encryption was only increasing due to the series of major military conflicts. In the XIX-XX centuries, the main impetus for the development of cryptography was provided by the military sphere. Since 1854, the British military had been using the Playfair cipher, which is based on the encryption of bigrams, or pairs of characters. This cipher was used until the beginning of World War II.
 
 In World War II, enemies were already using mobile electromechanical ciphers, which were considered unbreakable. The devices were either rotary or pinwheel ones. The first included the famous Enigma machine used by the Nazis, and the second - the American M-209 machine.
 
-![enigma-machine](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/c7914caf-d65b-3e36-8fc0-a61174ccd856.png)
+![enigma-machine](images/img15.png)
 
 The Enigma machine consisted of three rotors and a reflector. Each rotor had 26 sections, which corresponded to a separate letter of the alphabet, as well as 26 contacts for interaction with neighboring rotors. As soon as the operator pressed the necessary letter - the electric circuit was closed, as a result of which the cipher letter appeared. The circuit was closed by the reflector. The Enigma cipher was considered the most resistant to breaking, as the number of its combinations reached 15 quadrillion. However, the Enigma code was deciphered, first by Polish cryptographers in 1932, and then by the English scientist Alan Turing, who created the Enigma decryption machine called \"Bombe\". A set of 210 such machines allowed the British to decipher up to 3,000 military messages a day and contributed greatly to the allied victory.
 
-![enigma-algorithm](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/d8772df5-e85e-3423-a334-97ac37ef3be5.png)
+![enigma-algorithm](images/img16.png)
 
 ### Modern Cryptography. Symmetric encryption
 
@@ -112,20 +112,20 @@ The abilities of the new devices allow creating much more complex ciphers. Ciphe
 
 The DES algorithm is based on a Feistel network. This network operates with blocks, and each block entering the input is divided into two parts: left and right. The left part becomes the right part without any change. The right part is xored with the result of calculation of some function, to the input of which the left part and the key are fed. After this transformation the right part becomes the left part.
 
-![feistel-network](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/792b4ca3-dee3-3e38-8e23-f9266624db89.png)
+![feistel-network](images/img17.png)
 
 This network has several interesting advantages. The first important one is that the function F can be arbitrary, it does not have to have properties of reversibility, it may not be linear or nonlinear. It still remains a symmetric cipher. The second very convenient property: decryption is arranged in the same way as encryption. If it is necessary to decrypt this network, then the former mechanism simply receives ciphertext instead of plaintext.
 
 In a practical situation, such a construction (one Feistel network) represents one round of the block cipher, i.e. in the real cipher it is executed 16 times with different keys. For each of the 16 rounds, a separate 48-bit key is generated based on the original 56-bit key. Then, the function F uses the generated 48-bit key for each round.
 
-![des](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/dfa3980a-095f-3411-bb77-e5addd61b713.png)
+![des](images/img18.png)
 
 Each of 16 rounds consists of just a few operations:
 1) The size of the given half-block becomes equal to 32 bits, the half-block passes the expansion function, 32 bits get to the input. Next, by a special unclassified table, the initial 32 bits are saturated to 48 (by duplicating and permuting the original bits in the block).
 2) Then the xor operation is performed with the round key, which is also 48 bits in size, and the output is a 48-bit value, which goes into a set of S-boxes functions. These S-boxes convert every 6 bits of the input into 4 bits of the output. Therefore, the output of the S-boxes of 48 bits is again 32 bits.
 3) At the end a final permutation of P is performed. It again shuffles the 32 bits together.
 
-![round-function](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/651837/83dd780d-c50a-3b83-88a0-c2861e24cf41.png)
+![round-function](images/img19.png)
 
 The key part of the algorithm lies in the specified S-boxes, selected in a special way: a very complex transformation of 6 bits into 4 is conceived.  If you look at the whole structure, you can see that it consists of XOR and a couple of permutations. If the S-boxes were simple, the whole DES would actually be some set of linear transformations. It could be thought of as a matrix to which our plaintext is multiplied, getting the encrypted message. And then an attack on DES would be trivial: one would just have to match the matrix.
 

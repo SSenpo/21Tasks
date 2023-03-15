@@ -26,7 +26,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I
 
-![SimpleNavigator](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/e7c3e43a-1198-3a33-9fe4-0a90eb1ff725.JPG)
+![SimpleNavigator](images/img24.JPG)
 
 `-` \"We're transferring you to another project,\" Robert said, which sounded like a verdict. Eve was standing in the middle of her boss's office again. She couldn't understand the reason for this decision at all. \"Finish your pathfinding task, then gather up all the work you've done and give it to Alice. From now on, her department will be in charge of this.\"
 
@@ -62,15 +62,15 @@ Leonard Euler (1707-1783) is the founder of the graph theory. The origin of this
 
 The city of Königsberg (now Kaliningrad), founded in the 13th century, consisted of three formally independent urban settlements and several other \"slobodas\" and \"settlements\". They were set on the islands and riversides of the Pregel, dividing the city into four main parts: A) Altstadt, B) Kneiphof, C) Lomse, D) Vorstadt. The construction of bridges began in the 14th century to connect these parts of the city. Due to the constant military danger, bridges had defensive qualities. The bridges were a place of demonstrations, religious and festive processions, along with orthodox cross processions. Here is a map of the area and its simplified scheme:
  
-![konigsberg-map](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/2ceb3387-4bde-3aee-afca-d2fd1cc2d0df.png)
+![konigsberg-map](images/img25.png)
 
-![simple-konigsberg-map](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/bac2ed66-bd34-306b-9710-fcff55df43ca.png)
+![simple-konigsberg-map](images/img26.png)
 
 >I was asked whether someone could traverse the separate bridges in a connected walk in such a way that each bridge is crossed only once. I was informed that hitherto no-one had demonstrated the possibility of doing this, or shown that it is impossible. This question is so banal, but seemed to me worthy of attention in that neither geometry, nor algebra, nor even the art of counting was sufficient to solve it. And so, after some deliberation, I obtained a simple, yet completely established, rule with whose help one can immediately decide for all examples of this kind, with any number of bridges in any arrangement, whether such a round trip is possible, or not. 
 
 You can see how Königsberg bridges are situated in the following picture, where the vertices of the graph correspond to a certain part of the city, and the edges correspond to bridges over the river, where A is an island, and B, C and D are parts of the continent, separated from each other by arms of the river.
 
-![konigsberg-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/fbb90ec3-687c-3ad5-94ff-cb61c6ac1927.png)
+![konigsberg-graph](images/img27.png)
 
 So is it possible to traverse the Königsberg bridges by crossing each of these bridges only once? To find the answer, let's continue with Euler's letter to Marinoni:
 
@@ -93,40 +93,40 @@ A **Graph** has a finite set of vertices, and a set of edges. Each edge has two 
 **Types of graphs based on the type of edges:**
 * *undirected* - a graph in which movement between vertices connected by an edge is possible in any direction
 
-![not-orient-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/46108eb2-0f2a-3b27-a8da-9dd499ed6a53.png)
+![not-orient-graph](images/img28.png)
 
 * *directed* - a graph, the edges of which have a direction. Directed edges are also called arcs. Moving from one vertex to another is possible only by arcs of corresponding direction
 
-![orient-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/201d3bce-da97-3965-86b7-f0792a2379ab.png)
+![orient-graph](images/img29.png)
 
 If besides the edge between two vertices, the weight of the edge is also given, then such a graph is called ***weighted***.
 
-![weighted-orient-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/bac6c838-670c-361f-a2f7-6add8e59f39f.png)
+![weighted-orient-graph](images/img30.png)
 
 
 **Types of graphs based on the number of edges:**
 * a *null graph* is a graph in which there are no edges
 
-![null-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/6de9bbda-8ec1-329b-8dc9-48fc0a3190eb.png)
+![null-graph](images/img31.png)
 
 * *incomplete* - the graph has edges, but not from every vertex, there is an edge to every other vertex
 
-![not-full-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/3f0a4507-ba11-3b24-b415-0ad4c10aab42.png)
+![not-full-graph](images/img32.png)
 
 * *complete* - the graph has an edge from each vertex to any other vertex
 
-![full-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/41815190-abe6-38b5-b1d5-57c4931c4ab3.png)
+![full-graph](images/img33.png)
 
 
 **Types of graphs based on node reachability:**
 
 * *connected* - for any vertex in the graph there is at least one path to any other vertex in the same graph
 
-![linked-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/f20d3cfb-12dc-3021-924e-3610751b7517.png)
+![linked-graph](images/img34.png)
 
 * *disconnected* - the graph has no path between at least two vertices
 
-![not-linked-graph](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/be5a689f-58ac-3609-9be8-e1de3d34ee6d.png)
+![not-linked-graph](images/img35.png)
 
 For directed graphs there are two more types of connectivity: *strongly connected* and *weakly connected*.
 * *strongly connected* - there is a path for any vertex in a directed graph to any other vertex and back. 
@@ -140,11 +140,11 @@ An important subtype of graphs are *trees*.
     
 ***A tree*** is a connected acyclic graph in which any two vertices are connected by only one path. The following formula is the same for any tree: *q = n - 1*, where q is the number of edges, n is the number of vertices of the graph (tree). Trees can be built on the basis of both undirected and directed graphs, depending on the problem to be solved.
 
-![tree](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/d8827e2c-611f-37f7-a2b3-51f52ef7a909.png)
+![tree](images/img36.png)
 
 ***A spanning tree*** is a subgraph of a given graph that includes all its vertices and is a tree. The graph edges that are not part of the spanning tree are called chords of the graph relative to the spanning tree.
 
-![spanning-tree](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356286/db01c5b9-d955-3df0-b62e-2054a146f62f.png)
+![spanning-tree](images/img37.png)
 
 
 ### Ways of representing a graph

@@ -33,7 +33,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I
 
-![linux](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356272/0166ac1c-98c2-3372-8013-5f4a110a51f4.png)
+![linux](images/img0.png)
 
 >Developer’s note: 
     

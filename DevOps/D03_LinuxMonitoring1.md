@@ -23,7 +23,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I
 
-![linux_monitoring_v1](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356278/74c9608b-86e8-3a33-8c9a-69fb77541b13.png)
+![linux_monitoring_v1](images/img1.png)
 
 Planet Earth, USA, California, nowadays.
 

@@ -25,7 +25,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I
 
-![Maze](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/b1035d1e-6e3a-376f-9ab9-ad9bad3fbde4.JPG)
+![Maze](images/img0.JPG)
 
 Eve approached the head's office just as the familiar, muted shouting emerged out of it:
 
@@ -66,7 +66,7 @@ A maze with \"thin walls\" is a table of _n_ rows by _m_ columns size. There may
 
 The following is an example of such a maze: 
     
-![maze](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/93fe7cbb-df43-3f73-acde-6211dbae20bb.jpg)
+![maze](images/img1.jpg)
 
 The solution to a maze is the shortest path from a given starting point (table cell) to the ending one.
 
@@ -75,7 +75,7 @@ A route is considered the shortest if it passes through the smallest number of c
 
 An example of a maze with its solution:  
     
-![solution](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/82314b67-b808-3f5f-9348-a3aed93b4779.jpg)
+![solution](images/img2.jpg)
 
 In this example, the starting point is 10; 1, and the ending point is 6; 10.
 
@@ -101,7 +101,7 @@ An example of such a file:
 
 The maze described in this file:  
     
-![maze4](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/c39300ef-b287-330f-a0bd-363a9c4646e0.jpg)
+![maze4](images/img3.jpg)
 
 See materials for more examples of maze descriptions.
 
@@ -111,11 +111,11 @@ Maze flaws include isolated areas and loops.
 
 An isolated area is a part of the maze with passages that you cannot access from the rest of the maze. For example: 
     
-![isolated](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/06d40234-680b-3666-9d18-3d6db35853f6.png)
+![isolated](images/img4.png)
 
 A loop is a part of the maze with passages that can be walked in \"circles\". The walls in the loops are not connected to the walls surrounding the maze. For example: 
     
-![loop](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/3fa85cb4-8c91-33c6-8f5b-01e53ba1021a.png)
+![loop](images/img5.png)
 
 ## Generation using a cellular automaton
 
@@ -128,8 +128,8 @@ If \"live\" cells are surrounded by \"live\" cells, the number of which is less 
 
 An example of the algorithm's result (the first picture shows only the initialized maze, and the second picture shows a maze in which there are no more changes in subsequent steps): 
     
-![cave1](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/c5f6fef6-203f-3858-a13e-7991b09eaa7e.jpg)
-![cave2](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/542ac2c6-e4f9-31d5-94dd-edd3c2c7c48f.jpg)
+![cave1](images/img6.jpg)
+![cave2](images/img7.jpg)
 
 ## Caves description
 
@@ -146,7 +146,7 @@ An example of such a file:
 
 The cave described in this file: 
     
-![cave3](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356285/d775234d-bbac-3c2e-a8dd-b11110bfc060.jpg)
+![cave3](images/img8.jpg)
 
 See materials for more examples of cave descriptions.
 

@@ -23,7 +23,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I  
 
-![s21_memory](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356291/70c42e13-8da0-324b-91ad-fb433c59487f.JPG)
+![s21_memory](images/img0.JPG)
 
 There was only one thing left to do before being promoted to the position of a Middle Developer: to implement a small project that replicated the behavior of the standard memory library in the C language, so dearly loved by Eve. When Bob gave her the task, she couldn't believe her luck. She was familiar with malloc and free implementations since reading Kernighan and Ritchie's book. So no wonder Eve immediately rushed to her desk, even though she had plenty of time to do the task.
 
@@ -57,7 +57,7 @@ In addition, the linked list of all available blocks has fields pointing to the 
 
 Here is a picture of how the blocks look in memory (but there is no pointer to the previous block):
 
-![Memory_Blocks](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356291/274a120d-e098-34d3-b0fe-37d172f43bd6.png)
+![Memory_Blocks](images/img1.png)
 
 The objects A, and C are in use, and the block B is currently not used.
 
@@ -71,7 +71,7 @@ For faster access, a memory block should be aligned, and usually by the size of 
 
 Here is the picture of how an aligned block with an object header looks like:
 
-![Alignment-Header](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356291/e5bdf7ee-54e5-3781-bbbe-8d87d8da8d4d.png)
+![Alignment-Header](images/img2.png)
 
 It means that if a user requests to allocate, say, 6 bytes, we actually allocate 8 bytes. Allocating 4 bytes can result either to 4 bytes — on 32-bit architecture, or to 8 bytes — on x64 machine.
 
@@ -83,7 +83,7 @@ We will now implement a procedure of splitting a larger free block, taking from 
 
 Here is an example:
 
-![Block-split](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356291/e77c5567-2a35-3f19-8814-f0573859a923.png)
+![Block-split](images/img3.png)
 
 ### Blocks coalescing
 
@@ -93,7 +93,7 @@ On freeing the objects, we can do the opposite to splitting operation, and coale
 
 Here is an example:
 
-![Blocks-coalescing](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356291/eb911ed9-32c8-357f-b8b3-bc547004df42.png)
+![Blocks-coalescing](images/img4.png)
 
 ### Function description
 
@@ -108,7 +108,7 @@ Here is an example:
 The easiest way to find free cells is a linear search, i.e. the analysis of each block, one by one.
 A more efficient algorithm would be using an explicit free-list, which links only free blocks.
 
-![Explicit-free-list](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356291/7fe34ac6-4626-3f99-988f-1d9a352e9526.png)
+![Explicit-free-list](images/img5.png)
 
 This might be a significant performance improvement, when the heap is getting larger, and one needs to traverse a lot of objects in the basic algorithms.
 

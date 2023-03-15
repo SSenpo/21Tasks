@@ -525,10 +525,13 @@ Create a test in the *ElementsTests* file.
 Following the test naming convention, the test name will be as follows:
 Given_Code_When_LanguageAndCodeAsParameter_Then_ReturnMarkdownCodeMarkup.
 
-Next, take the line ```` ```csharp\
-some code\
-```\
- ```` as a reference and put its value in the *expected* variable. Then create an object of the *Code* type with the ```csharp``` and ```some code``` parameters and call the *Create* method. Save the result to the *actual* variable. Now, to check the value, use the static **Assert** class and compare the two values. If the values are not equal, the test will fail. 
+Next, take the line 
+```` 
+```csharp
+some code
+```
+```` 
+as a reference and put its value in the *expected* variable. Then create an object of the *Code* type with the ```csharp``` and ```some code``` parameters and call the *Create* method. Save the result to the *actual* variable. Now, to check the value, use the static **Assert** class and compare the two values. If the values are not equal, the test will fail. 
 
 The actions described above are a pattern of building unit-tests, which is called **AAA-Arrange**, **Act**, **Assert**. The **Arrange** block configures the unit-test environment (creating a *Code* object, *expected* declaration). The test script is executed in the **Act** block. And in the **Assert** block, the results are checked. Follow this pattern, and your tests will be clean, they will be easy to read.
 
@@ -2281,18 +2284,18 @@ We just need a few simple screens.
 ### Setting a habit
 If there is no active tracking habit in the system, the application should display the setting screen. 
 
-![Habit form](https://edu.21-school.ru/services/storage/download/public_any/14f2d27f-03db-42fc-b5f9-cd6c593fff8b?path=gitlab/content_versions/380615/96a224a5-f124-3d32-b077-fef0be4544be.png)
+![Habit form](images/img0.png)
 
 The user fills in the required fields to start tracking.
 
-![Habit form filled](https://edu.21-school.ru/services/storage/download/public_any/14f2d27f-03db-42fc-b5f9-cd6c593fff8b?path=gitlab/content_versions/380615/8b07b79d-9a69-3a9e-963a-a26f1db20bbd.png)
+![Habit form filled](images/img1.png)
 
 Pay attention to the input data: all fields are required; the number of days should not be negative. The «start» button should lead to the next screen.
 
 ### Tracking
 If there is a tracking habit set for tracking (or it was filled in a previous step), the user should see the tracking screen. Here they have the opportunity to tick each of the days.
 
-![Tracking](https://edu.21-school.ru/services/storage/download/public_any/14f2d27f-03db-42fc-b5f9-cd6c593fff8b?path=gitlab/content_versions/380615/0904bbcc-8788-3d43-aed5-d11468ef53b7.png)
+![Tracking](images/img2.png)
 
 It is important to process each tick (the **Checked event** of each **CheckBox** object) in order to set and save it in the model. Don't forget to check if the tracking is complete! 
 
@@ -2384,7 +2387,7 @@ Connect DB to your code so that:
 
 As a bonus task, make it so that at the end of the tracking of the habit (_IsFinished_ == true), a congratulatory message is displayed with the number of completed days and a text of motivation.
 
-![Finished tracking](https://edu.21-school.ru/services/storage/download/public_any/14f2d27f-03db-42fc-b5f9-cd6c593fff8b?path=gitlab/content_versions/380615/cfade9fe-1045-3bf9-9e9e-eec309d8f26e.png)
+![Finished tracking](images/img3.png)
 
 ### Self-test
 - At the first launch, the application offers to fill in the information to create a habit tracker. 
@@ -3132,4 +3135,3 @@ Mrk
 Y
 >Hello, Mark!
 ```
-","__typename":"TaskContent"},"__typename":"Task"},"__typename":"StudentTask"},{"id":"371511_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371511","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"371510_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371510","content":{"id":"615c418c410a740ea858db69","body":"","__typename":"TaskContent"},"__typename":"Task"},"__typename":"StudentTask"},{"id":"371517_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371517","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"371516_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371516","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"371519_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371519","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"371518_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371518","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"371513_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371513","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"371512_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371512","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"371515_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371515","content":null,"__typename":"Task"},"__typename":"StudentTask"},{"id":"371514_fd0650a0-5dff-4658-9b3d-56fa63631ca7","task":{"id":"371514","content":null,"__typename":"Task"},"__typename":"StudentTask"}],"__typename":"StudentQueries"}}}

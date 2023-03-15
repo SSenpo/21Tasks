@@ -27,7 +27,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I  
 
-![Algorithmic trading](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356296/e212129b-1822-3afa-a2a9-18a473b7fd56.JPG)
+![Algorithmic trading](images/img38.JPG)
 
 `-` \"Anyway, Bob told you the essence of the task, didn't he?\"
 

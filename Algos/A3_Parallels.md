@@ -28,7 +28,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I  
 
-![Parallels](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/649023/71083190-7095-36a9-863d-6e80446f0aa6.JPG)
+![Parallels](images/img6.JPG)
 
 Chuck sat down at the table with such force that the coffee almost spilled out of the cup.
 
@@ -57,7 +57,7 @@ In this project, you will learn the basic approaches to parallelism, and impleme
 
 A special case of synchronous programming is *single-threading*. If there are several tasks to be executed, and the current system provides one thread that can handle all the tasks, then it takes one by one, and the process looks like this:
 
-![singlethreaded](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/649023/0c85fbdb-8afc-33be-a28e-b3d968afae4f.png)
+![singlethreaded](images/img7.png)
 
 Here you can see that there is a thread and 4 tasks to be executed. The thread starts to execute them one by one and eventually completes them all.
 
@@ -67,7 +67,7 @@ Multithreading is another case of the synchronous programming in which there are
     
 So, multithreading can work like this:
 
-![multithreaded](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/649023/3de208fe-e0c3-3d81-aac6-1462686d8f26.png)
+![multithreaded](images/img8.png)
 
 Here you can see that we have 4 threads and just as many tasks to execute, and each thread starts working on them. This is a perfect case, but under normal conditions more tasks are used than the number of available threads, so the freed thread gets another task. 
     
@@ -105,7 +105,7 @@ In this approach, each thread executes the algorithm for *N/(number_of_threads)*
 
 An example of the pipeline's work organization:
 
-![pipeline](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/649023/56990344-5441-36e2-84ec-59ebe0863c28.png)
+![pipeline](images/img9.png)
 
 The example is the algorithm for finding the largest number in a string.
 The input is an array of strings, for each of which we need to search.

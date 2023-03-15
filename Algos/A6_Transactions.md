@@ -20,7 +20,7 @@ Implementation of in-memory key-value store for storing various financial transa
 
 ## Chapter I  
 
-![Transactions](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/368087/9a59e644-0057-37ee-be24-476c536354cf.JPG)
+![Transactions](images/img20.JPG)
 
 It was unusually crowded in the kitchen, as if the entire floor had come to celebrate a colleague’s birthday. Or at
 least just to get their piece of the pie. Even Bob was here with his favorite mug. 
@@ -70,7 +70,7 @@ Many NoSQL databases such as Redis, Memcached, Tarantool and many, many others a
 to high read and write speeds. Key-value pairs databases support high separability and provide unprecedented horizontal
 scaling unattainable with many other types of databases.
 
-![key-value-store](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/368087/2ade4db8-dd66-3cf2-bf5d-ede3ec2f7cb4.png)
+![key-value-store](images/img21.png)
 
 Hash tables or search trees are mostly used to implement key-value stores.
 
@@ -84,7 +84,7 @@ Thanks to this function, locating an element in a table by its key is generally 
 does not depend on the size of the hash table itself. The process of obtaining an index by the key is called **hashing**
 .
 
-![hash-table](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/368087/6d9b8a88-cb4b-31b3-9d4c-520b50926073.png)
+![hash-table](images/img22.png)
 
 When a hash function generates the same index for several different keys, there is a conflict: it is unclear which value
 should be stored in this index. Such situations are called **collisions**.
@@ -114,7 +114,7 @@ which are `NULL`) are called leaves.
 * all nodes in the right subtree of arbitrary node X have key values greater than or equal to the key value of node X
   itself.
 
-![binary-tree](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/368087/7e5e3d09-155a-3a39-858d-16a96cf1bf52.png)
+![binary-tree](images/img23.png)
 
 As a result, the data in the binary search tree is stored in a sorted order. Each time a new node is inserted, or an
 existing node is deleted, the sorted tree order is saved. This makes it possible to formalize the algorithm for

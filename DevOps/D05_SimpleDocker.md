@@ -31,7 +31,7 @@ The russian version of the task can be found in the repository.
 
 ## Chapter I
 
-![simple_docker](https://edu.21-school.ru/services/storage/download/public_any/e4ec63dd-cd02-40b4-807a-e806fd6a9fc7?path=tenantId/96098f4b-5708-4c42-a62c-6893419169b3/gitlab/content_versions/356282/c9b96a58-d169-3746-9561-99736b5c05aa.png)
+![simple_docker](images/img2.png)
 
 Planet Earth, Atlantic Ocean, Her Majesty's Ship \"Hood\", heading to London, UK, nowadays.
 
